@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function send() {
+		var f = document.frm;
+		f.action="simpleBean2.jsp";
+		f.submit();
+	}
+
+</script>
+</head>
+<body>
+<form  name="frm" action="simpleBean.jsp">
+msg : <input name="msg" value="빈을 만들자."><br/>
+cnt : <input name="cnt" value="10"><br/>
+<input type="submit" value="Send1">
+<input type="button" value="Send2" onclick="send()">
+</form>
+</body>
+</html>
